@@ -1,0 +1,65 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, #eee 0, #eee 5.09465%, transparent 5.09465%, transparent 8.62776%, #eee 8.62776%, #eee 13.72241%, transparent 13.72241%, transparent 17.25552%, #eee 17.25552%, #eee 22.35017%, transparent 22.35017%, transparent 25.88328%, #eee 25.88328%, #eee 30.97793%, transparent 30.97793%, transparent 34.51104%, #eee 34.51104%, #eee 39.60569%, transparent 39.60569%, transparent 43.13879%, #eee 43.13879%, #eee 48.23345%, transparent 48.23345%, transparent 51.76655%, #eee 51.76655%, #eee 56.86121%, transparent 56.86121%, transparent 60.39431%, #eee 60.39431%, #eee 65.48896%, transparent 65.48896%, transparent 69.02207%, #eee 69.02207%, #eee 74.11672%, transparent 74.11672%, transparent 77.64983%, #eee 77.64983%, #eee 82.74448%, transparent 82.74448%, transparent 86.27759%, #eee 86.27759%, #eee 91.37224%, transparent 91.37224%, transparent 94.90535%, #eee 94.90535%, #eee 100.0%, transparent 100.0%);
+  background-image: -moz-linear-gradient(left, transparent 0, #eee 0, #eee 5.09465%, transparent 5.09465%, transparent 8.62776%, #eee 8.62776%, #eee 13.72241%, transparent 13.72241%, transparent 17.25552%, #eee 17.25552%, #eee 22.35017%, transparent 22.35017%, transparent 25.88328%, #eee 25.88328%, #eee 30.97793%, transparent 30.97793%, transparent 34.51104%, #eee 34.51104%, #eee 39.60569%, transparent 39.60569%, transparent 43.13879%, #eee 43.13879%, #eee 48.23345%, transparent 48.23345%, transparent 51.76655%, #eee 51.76655%, #eee 56.86121%, transparent 56.86121%, transparent 60.39431%, #eee 60.39431%, #eee 65.48896%, transparent 65.48896%, transparent 69.02207%, #eee 69.02207%, #eee 74.11672%, transparent 74.11672%, transparent 77.64983%, #eee 77.64983%, #eee 82.74448%, transparent 82.74448%, transparent 86.27759%, #eee 86.27759%, #eee 91.37224%, transparent 91.37224%, transparent 94.90535%, #eee 94.90535%, #eee 100.0%, transparent 100.0%);
+  background-image: -ms-linear-gradient(left, transparent 0, #eee 0, #eee 5.09465%, transparent 5.09465%, transparent 8.62776%, #eee 8.62776%, #eee 13.72241%, transparent 13.72241%, transparent 17.25552%, #eee 17.25552%, #eee 22.35017%, transparent 22.35017%, transparent 25.88328%, #eee 25.88328%, #eee 30.97793%, transparent 30.97793%, transparent 34.51104%, #eee 34.51104%, #eee 39.60569%, transparent 39.60569%, transparent 43.13879%, #eee 43.13879%, #eee 48.23345%, transparent 48.23345%, transparent 51.76655%, #eee 51.76655%, #eee 56.86121%, transparent 56.86121%, transparent 60.39431%, #eee 60.39431%, #eee 65.48896%, transparent 65.48896%, transparent 69.02207%, #eee 69.02207%, #eee 74.11672%, transparent 74.11672%, transparent 77.64983%, #eee 77.64983%, #eee 82.74448%, transparent 82.74448%, transparent 86.27759%, #eee 86.27759%, #eee 91.37224%, transparent 91.37224%, transparent 94.90535%, #eee 94.90535%, #eee 100.0%, transparent 100.0%);
+  background-image: -o-linear-gradient(left, transparent 0, #eee 0, #eee 5.09465%, transparent 5.09465%, transparent 8.62776%, #eee 8.62776%, #eee 13.72241%, transparent 13.72241%, transparent 17.25552%, #eee 17.25552%, #eee 22.35017%, transparent 22.35017%, transparent 25.88328%, #eee 25.88328%, #eee 30.97793%, transparent 30.97793%, transparent 34.51104%, #eee 34.51104%, #eee 39.60569%, transparent 39.60569%, transparent 43.13879%, #eee 43.13879%, #eee 48.23345%, transparent 48.23345%, transparent 51.76655%, #eee 51.76655%, #eee 56.86121%, transparent 56.86121%, transparent 60.39431%, #eee 60.39431%, #eee 65.48896%, transparent 65.48896%, transparent 69.02207%, #eee 69.02207%, #eee 74.11672%, transparent 74.11672%, transparent 77.64983%, #eee 77.64983%, #eee 82.74448%, transparent 82.74448%, transparent 86.27759%, #eee 86.27759%, #eee 91.37224%, transparent 91.37224%, transparent 94.90535%, #eee 94.90535%, #eee 100.0%, transparent 100.0%);
+  background-image: linear-gradient(to left, transparent 0, #eee 0, #eee 5.09465%, transparent 5.09465%, transparent 8.62776%, #eee 8.62776%, #eee 13.72241%, transparent 13.72241%, transparent 17.25552%, #eee 17.25552%, #eee 22.35017%, transparent 22.35017%, transparent 25.88328%, #eee 25.88328%, #eee 30.97793%, transparent 30.97793%, transparent 34.51104%, #eee 34.51104%, #eee 39.60569%, transparent 39.60569%, transparent 43.13879%, #eee 43.13879%, #eee 48.23345%, transparent 48.23345%, transparent 51.76655%, #eee 51.76655%, #eee 56.86121%, transparent 56.86121%, transparent 60.39431%, #eee 60.39431%, #eee 65.48896%, transparent 65.48896%, transparent 69.02207%, #eee 69.02207%, #eee 74.11672%, transparent 74.11672%, transparent 77.64983%, #eee 77.64983%, #eee 82.74448%, transparent 82.74448%, transparent 86.27759%, #eee 86.27759%, #eee 91.37224%, transparent 91.37224%, transparent 94.90535%, #eee 94.90535%, #eee 100.0%, transparent 100.0%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 68em;
+  opacity: 0.4;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: -1; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+.header-wrap {
+  background-color: #eee;
+  width: 100%;
+  height: 75px; }
+
+.header {
+  margin: 0 auto;
+  width: 1080px;
+  height: 75px; }
+  .header .header-left {
+    float: left;
+    padding-top: 10px; }
+    .header .header-left a, .header .header-left img {
+      width: auto;
+      height: 50px;
+      cursor: pointer; }
+  .header .header-right {
+    float: right;
+    font-size: 28px; }
+
+.banner {
+  width: 100%;
+  height: 450px;
+  background: url("../images/gm_b&w.jpg") center center no-repeat;
+  background-size: cover; }
+
+.temps {
+  display: inline-block; }
+
+/*# sourceMappingURL=main.css.map */
