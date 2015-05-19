@@ -18,23 +18,20 @@ html {
   position: fixed;
   background: #fff;
   width: 100%;
-  height: 75px;
+  height: 100px;
   border-top: 5px solid #03A9F4;
-  z-index: 150;
-  box-shadow: 0 0 30px -20px #555; }
+  z-index: 150; }
 
-.header {
-  margin: 0 auto;
+.header-container {
   width: 1080px;
-  height: 75px; }
-  .header .header-left {
-    float: left;
-    padding-top: 20px; }
-  .header .header-right {
-    float: right;
-    font-size: 28px;
-    padding-right: 15px;
-    padding-top: 15px; }
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 120px; }
+
+.header-left {
+  float: left;
+  padding-top: 20px;
+  display: inline-block; }
 
 .header-logo {
   width: auto;
@@ -89,12 +86,13 @@ html {
 
 /* Contact Slideout */
 .contact-wrap {
-  width: 1080px;
+  width: 400px;
   margin: 0 auto;
   height: 100px;
   position: relative;
   background: transparent;
-  padding-top: 20px; }
+  display: inline;
+  float: right; }
 
 .contact-slideout {
   width: 200px;
@@ -123,7 +121,7 @@ html {
   width: 200px;
   height: 100px;
   background: #EF5350;
-  padding: 38px 15px;
+  padding: 30px 15px;
   right: 0;
   bottom: 0px;
   text-align: center;
@@ -131,8 +129,8 @@ html {
   float: right; }
   .close-slideout p {
     color: #fff;
-    font-size: 18px;
-    font-weight: normal; }
+    font-size: 28px;
+    font-weight: 300; }
 
 .close-bio {
   position: relative;
@@ -168,7 +166,7 @@ html {
   width: 200px;
   height: 100px;
   background: #EF5350;
-  padding: 38px 15px;
+  padding: 30px 15px;
   right: 0;
   bottom: 0px;
   text-align: center;
@@ -177,8 +175,8 @@ html {
   transition: 250ms; }
   .contact-square p {
     color: #fff;
-    font-size: 18px;
-    font-weight: normal; }
+    font-size: 28px;
+    font-weight: 300; }
 
 .contact-square-shrink {
   width: 100px; }
@@ -196,7 +194,8 @@ html {
   height: 100px;
   padding: 0;
   z-index: 95;
-  vertical-align: bottom; }
+  vertical-align: bottom;
+  overflow: hidden; }
 
 .contact-thumbnail img {
   width: 100px;
@@ -243,7 +242,10 @@ html {
   position: relative;
   bottom: 0;
   padding-top: 100px;
-  transition: 250ms; }
+  transition: 250ms;
+  width: 80px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px #000; }
 
 .ed-name {
   z-index: 95; }
@@ -266,16 +268,73 @@ html {
 .open-davis {
   bottom: 0; }
 
+/* Product Dropdown */
+.header-nav p {
+  /* float: right; */
+  /* width: 74px; */
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 300; }
+
+.header-nav span {
+  font-size: 24px;
+  padding-right: 5px; }
+
+.header-nav a {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 300; }
+
+.header-nav {
+  padding-top: 20px; }
+
+.header-nav ul {
+  list-style: none;
+  padding-left: 0; }
+
+.header-nav li {
+  display: inline-block;
+  padding-right: 30px; }
+
+.nav-dropdown-container {
+  width: 100%;
+  z-index: 50;
+  height: 0; }
+
+.nav-dropdown {
+  width: 1080px;
+  background: rgba(255, 255, 255, 0.9);
+  height: 500px;
+  position: relative;
+  top: -400px;
+  z-index: 50;
+  transition: 250ms;
+  margin: 0 auto; }
+
+.nav-dropdown ul {
+  list-style: none;
+  padding-left: 0; }
+
+.open-product-nav {
+  top: 100px; }
+
+.dropdown-trigger {
+  cursor: pointer; }
+
 /* Company Logos */
 .company-logos-wrap {
   width: 100%;
   background: #fff;
-  height: 150px;
-  position: relative; }
+  height: 400px;
+  position: relative;
+  top: 100px; }
 
 .company-logos {
   width: 1080px;
-  margin: 0 auto; }
+  height: 500px;
+  margin: 0 auto;
+  background: url("../images/placeholder3.jpg") center bottom;
+  background-size: cover; }
 
 .temps {
   display: inline-block; }

@@ -29,6 +29,8 @@
   });
 
 
+
+
   // Edward Slideout
 
   // $('.ed-thumbnail').on('click', function(){
@@ -45,6 +47,23 @@
   // $('.contact-thumbnail').hover(function(){
   //   $('.ed-name').removeClass('hidden');
   // });
+
+    $('.dropdown-trigger').on('click', function(){
+  event.preventDefault();
+    $('.nav-dropdown').toggleClass('open-product-nav');
+  });
+
+  //   $( ".dropdown-trigger" )
+	 //  .mouseover(function() {
+	 //    $( ".nav-dropdown" ).addClass( "open-product-nav" );
+
+	 //  })
+	 //  .mouseout(function() {
+	 //    $( ".nav-dropdown" ).removeClass( "open-product-nav" );
+
+  // });
+
+
 
 
   $( ".ed-thumbnail" )
