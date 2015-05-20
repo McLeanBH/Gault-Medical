@@ -29,7 +29,8 @@ html {
 .header-container {
   width: 1080px;
   margin: 0 auto;
-  margin-top: 30px; }
+  margin-top: 30px;
+  position: relative; }
 
 .header-left {
   float: left;
@@ -69,24 +70,62 @@ html {
   display: inline-block;
   padding-right: 30px; }
 
+.header-social {
+  display: inline-block;
+  width: 300px;
+  float: right;
+  text-align: right;
+  position: absolute;
+  right: 10px;
+  vertical-align: top;
+  margin-top: -25px; }
+  .header-social ul {
+    list-style: none;
+    padding-left: 0; }
+  .header-social li {
+    display: inline-block; }
+
+.social-button {
+  padding-right: 15px;
+  font-size: 30px;
+  color: #555;
+  transition: 250ms; }
+
+.fa-twitter:hover {
+  color: #00aced; }
+
+.fa-facebook:hover {
+  color: #3b5998; }
+
 .nav-dropdown-container {
-  width: 100%;
+  width: 1080px;
+  position: relative;
+  margin: 0 auto;
   z-index: 50;
   height: 0; }
 
 .nav-dropdown {
   width: 1080px;
-  background: #f0f0f0;
-  height: 500px;
-  position: relative;
-  top: -500px;
+  background: rgba(0, 0, 0, 0.8);
+  height: 50px;
+  position: absolute;
+  top: -50px;
   z-index: 150;
-  transition: 250ms;
-  margin: 0 auto; }
+  transition: 250ms; }
+
+.nav-dropdown span {
+  padding-right: 5px;
+  color: #555; }
 
 .nav-dropdown ul {
   list-style: none;
   padding-left: 0; }
+
+.nav-dropdown li {
+  display: inline-block;
+  font-weight: 300;
+  padding: 15px 15px 0 15px;
+  color: #dfdfdf; }
 
 .open-product-nav {
   top: 0px; }
@@ -108,16 +147,17 @@ html {
   background-size: cover; }
 
 .logo {
-  width: 90px;
+  width: 75px;
   display: inline-block;
-  padding-top: 0px; }
+  padding-top: 0px;
+  margin-right: 5px; }
 
 .banner-logo {
   width: 600px;
   display: inline-block;
   position: absolute;
-  padding-left: 25px;
-  bottom: 25px; }
+  padding-left: 50px;
+  bottom: 40px; }
   .banner-logo ul {
     list-style: none;
     padding-left: 0; }
@@ -132,7 +172,7 @@ html {
   font-weight: 900;
   font-family: 'Lato', sans-serif;
   font-style: italic;
-  line-height: 50px;
+  line-height: 48px;
   text-shadow: 1px 1px 10px #000; }
 
 .banner-animation,
@@ -143,7 +183,9 @@ html {
   font-weight: 300;
   padding-right: 5px;
   font-family: 'Lato', sans-serif;
-  text-shadow: 1px 1px 5px #000; }
+  text-shadow: 1px 1px 5px #000;
+  line-height: 20px;
+  text-transform: lowercase; }
 
 .banner-overlay-left {
   position: absolute;
@@ -172,7 +214,7 @@ html {
   background: transparent;
   display: inline;
   float: right;
-  margin-top: 85px;
+  margin-top: 130px;
   margin-right: -24px; }
 
 .contact-slideout {
@@ -247,7 +289,7 @@ html {
   width: 200px;
   height: 100px;
   background: #BF360C;
-  padding: 30px 15px;
+  padding: 34px 0px;
   right: 0;
   bottom: 0px;
   text-align: center;
@@ -257,8 +299,14 @@ html {
   cursor: pointer; }
   .contact-square p {
     color: #fff;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 300; }
+
+.contact-square span {
+  padding-right: 5px;
+  font-size: 16px;
+  vertical-align: top;
+  padding-top: 8px; }
 
 .contact-square-shrink {
   width: 100px; }
@@ -355,12 +403,12 @@ html {
 .footer-wrap {
   position: relative;
   height: 200px;
-  margin-top: 125px; }
+  margin-top: 25px; }
 
 .footer {
   width: 1080px;
   margin: 0 auto;
-  border-top: 1px solid #999;
+  border-top: 1px solid #dfdfdf;
   padding-top: 25px; }
 
 .footer li {
@@ -389,10 +437,6 @@ html {
 
 .footer-heading span {
   color: #555; }
-
-.social-button {
-  padding-right: 10px;
-  font-size: 24px; }
 
 /* Override Classes */
 .hidden {
