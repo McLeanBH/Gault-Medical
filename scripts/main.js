@@ -4,7 +4,7 @@
       $(".banner-animation").typed({
         strings: ["Supplies", "Devices"],
         typeSpeed: 100,
-        backDelay: 1500,
+        backDelay: 3000,
         loop: true, 
         showCursor: false
       });
