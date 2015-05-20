@@ -33,14 +33,74 @@
 
   // Edward Slideout
 
-  // $('.ed-thumbnail').on('click', function(){
-  // event.preventDefault();
-  //   $('.ed-thumbnail').addClass('ed-thumbnail-shift');
-  //   $('.close-slideout').addClass('hidden');
-  //   $('.close-bio').removeClass('hidden');
-  //   $('.contact-slideout').addClass('contact-slideout-expand');
+  $('.ed-thumbnail').on('click', function(){
+  event.preventDefault();
 
-  // });
+    $('.davis-thumbnail').toggleClass('hidden');
+    $('.ed-bio').toggleClass('hidden');
+    $('.open-slideout').toggleClass('open-bio');
+    $('.contact').toggleClass('contact-expand-bio');
+
+    $('.contact-square').addClass('hidden');
+    $('.ed-exit-bio').removeClass('hidden');
+
+    $('.ed-thumbnail').addClass('hidden');
+    $('.ed-thumbnail-bio').removeClass('hidden');
+
+
+  });
+
+  $('.ed-exit-bio').on('click', function(){
+  event.preventDefault();
+
+    $('.davis-thumbnail').toggleClass('hidden');
+    $('.ed-bio').toggleClass('hidden');
+    $('.open-slideout').toggleClass('open-bio');
+    $('.contact').toggleClass('contact-expand-bio');
+
+    $('.contact-square').removeClass('hidden');
+    $('.ed-exit-bio').addClass('hidden');
+    
+    $('.ed-thumbnail').removeClass('hidden');
+    $('.ed-thumbnail-bio').addClass('hidden');
+
+  });
+
+
+  // Davis SLideout
+
+  $('.davis-thumbnail').on('click', function(){
+  event.preventDefault();
+
+    $('.ed-thumbnail').toggleClass('hidden');
+    $('.davis-bio').toggleClass('hidden');
+    $('.open-slideout').toggleClass('open-bio');
+    $('.contact').toggleClass('contact-expand-bio');
+
+    $('.contact-square').addClass('hidden');
+    $('.davis-exit-bio').removeClass('hidden');
+
+    $('.davis-thumbnail').addClass('hidden');
+    $('.davis-thumbnail-bio').removeClass('hidden');
+
+
+  });
+
+  $('.davis-exit-bio').on('click', function(){
+  event.preventDefault();
+
+    $('.ed-thumbnail').toggleClass('hidden');
+    $('.davis-bio').toggleClass('hidden');
+    $('.open-slideout').toggleClass('open-bio');
+    $('.contact').toggleClass('contact-expand-bio');
+
+    $('.contact-square').removeClass('hidden');
+    $('.davis-exit-bio').addClass('hidden');
+    
+    $('.davis-thumbnail').removeClass('hidden');
+    $('.davis-thumbnail-bio').addClass('hidden');
+
+  });
 
 
 
@@ -89,3 +149,62 @@
     $( ".davis-name", this ).removeClass( "name-jump" );
 
   });
+
+
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+        //Navigation
+        menu: false,
+        anchors:['firstPage', 'secondPage'],
+        navigation: false,
+        navigationPosition: 'right',
+        navigationTooltips: ['firstSlide', 'secondSlide'],
+        showActiveTooltips: false,
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+
+        //Scrolling
+        css3: true,
+        scrollingSpeed: 700,
+        autoScrolling: true,
+        fitToSection: true,
+        scrollBar: false,
+        easing: 'easeInOutCubic',
+        easingcss3: 'ease',
+        loopBottom: false,
+        loopTop: false,
+        loopHorizontal: true,
+        continuousVertical: false,
+        normalScrollElements: '#element1, .element2',
+        scrollOverflow: false,
+        touchSensitivity: 15,
+        normalScrollElementTouchThreshold: 5,
+
+        //Accessibility
+        keyboardScrolling: true,
+        animateAnchor: true,
+        recordHistory: true,
+
+        //Design
+        controlArrows: true,
+        verticalCentered: true,
+        resize : false,
+        sectionsColor : ['#fff', 'transparent'],
+        paddingTop: '3em',
+        paddingBottom: '10px',
+        fixedElements: '#header, .footer',
+        responsive: 0,
+
+        //Custom selectors
+        sectionSelector: '.section',
+        slideSelector: '.slide',
+
+        //events
+        onLeave: function(index, nextIndex, direction){},
+        afterLoad: function(anchorLink, index){},
+        afterRender: function(){},
+        afterResize: function(){},
+        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+        onSlideLeave: function(anchorLink, index, slideIndex, direction){}
+    });
+});
