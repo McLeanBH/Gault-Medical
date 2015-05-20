@@ -12,8 +12,10 @@ $gutter: em(47px);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
+
+/* Header */
 
 .header-wrap {
     position:relative;
@@ -28,7 +30,6 @@ $gutter: em(47px);
     width: 1080px;
     margin: 0 auto;
     margin-top: 30px;
-    height: 120px;
 }
 
 .header-left {
@@ -44,12 +45,76 @@ $gutter: em(47px);
     cursor: pointer;
 }
 
+/* Header Nav and Product Dropdown */
+
+.header-nav p {
+    /* float: right; */
+    /* width: 74px; */
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight:300;
+}
+
+.header-nav span {
+    font-size: 24px;
+    padding-right:5px;
+}
+
+.header-nav a {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight:300;
+}
+
+.header-nav {
+    padding-top:20px;
+}
+
+.header-nav ul {
+    list-style: none;
+    padding-left:0;
+}
+
+.header-nav li {
+    display: inline-block;
+    padding-right:30px;
+}
+
+.nav-dropdown-container {
+    width:100%;
+    z-index:50;
+    height:0;
+}
+
+.nav-dropdown {
+  width: 1080px;
+  background: #f0f0f0;
+  height: 500px;
+  position: relative;
+  top: -500px;
+  z-index: 150;
+  transition: 250ms;
+  margin: 0 auto;
+}
+
+.nav-dropdown ul {
+    list-style:none;
+    padding-left:0;
+}
+
+.open-product-nav {
+    top:0px;
+}
+
+.dropdown-trigger {
+    cursor: pointer;
+}
+
 /* Banner */
 
 .banner-wrap {
     width: 100%;
     background:#fff;
-    height: 400px;
     position: relative;
 }
 
@@ -62,30 +127,52 @@ $gutter: em(47px);
 
 }
 
+.logo {
+    width: 90px;
+    display: inline-block;
+    padding-top: 0px;
+}
+
 
 .banner-logo {
-    width: 500px;
+    width: 600px;
     display: inline-block;
     position: absolute;
-    padding-top: 25px;
     padding-left: 25px;
+    bottom: 25px;
+
+    & ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    & li {
+        display: inline-block;
+        vertical-align: top;
+    }
 }
 
 .banner-heading {
-    font-size: 60px;
-    color: #555;
-    font-weight: normal;
-    text-transform: uppercase;
-    font-family: 'Nevis', sans-serif;
+    font-size: 48px;
+    color: #fff;
+    text-transform:uppercase;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    line-height:50px;
+    text-shadow: 1px 1px 10px #000;
 }
 
 .banner-animation, 
 .banner-pre-animation {
     display:inline-block;
     font-size: 24px;
-    color: #555;
-    font-weight: normal;
+    color: #fff;
+    font-weight: 300;
     padding-right:5px;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 1px 1px 5px #000;
+
 
 }
 
@@ -119,8 +206,8 @@ $gutter: em(47px);
     background: transparent;
     display: inline;
     float: right;
-    margin-top: 25px;
-    margin-right: 25px;
+    margin-top: 85px;
+    margin-right: -24px;
 }
 
 .contact-slideout {
@@ -209,7 +296,7 @@ $gutter: em(47px);
     position: relative;
     width: 200px;
     height: 100px;
-    background: #B71C1C;
+    background: #BF360C;
     padding: 30px 15px;
     right: 0;
     bottom: 0px;
@@ -333,70 +420,7 @@ $gutter: em(47px);
     bottom: 0;
 }
 
-/* Product Dropdown */
 
-.header-nav p {
-    /* float: right; */
-    /* width: 74px; */
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight:300;
-}
-
-.header-nav span {
-    font-size: 24px;
-    padding-right:5px;
-}
-
-.header-nav a {
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight:300;
-}
-
-.header-nav {
-    padding-top:20px;
-}
-
-.header-nav ul {
-    list-style: none;
-    padding-left:0;
-}
-
-.header-nav li {
-    display: inline-block;
-    padding-right:30px;
-}
-
-.nav-dropdown-container {
-    width:100%;
-    z-index:50;
-    height:0;
-}
-
-.nav-dropdown {
-  width: 1080px;
-  background: rgba(255,255,255,.9);
-  height: 500px;
-  position: relative;
-  top: -500px;
-  z-index: 150;
-  transition: 250ms;
-  margin: 0 auto;
-}
-
-.nav-dropdown ul {
-    list-style:none;
-    padding-left:0;
-}
-
-.open-product-nav {
-    top:0px;
-}
-
-.dropdown-trigger {
-    cursor: pointer;
-}
 
 /* Company Logos */
 
@@ -458,4 +482,16 @@ $gutter: em(47px);
 
 .hidden {
     display: none;
+}
+
+.dimension-wrap {
+    background: url("../images/3d-wrap.png");
+    width: 25px;
+    height: 10px;
+    background-size: contain;
+    position: absolute;
+    /* margin-left: auto; */
+    margin-top: 100px;
+    margin-left: 376px;
+    z-index: 50;
 }

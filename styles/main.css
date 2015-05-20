@@ -15,8 +15,9 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Lato', sans-serif; }
 
+/* Header */
 .header-wrap {
   position: relative;
   background: #fff;
@@ -28,8 +29,7 @@ html {
 .header-container {
   width: 1080px;
   margin: 0 auto;
-  margin-top: 30px;
-  height: 120px; }
+  margin-top: 30px; }
 
 .header-left {
   float: left;
@@ -41,11 +41,63 @@ html {
   height: 30px;
   cursor: pointer; }
 
+/* Header Nav and Product Dropdown */
+.header-nav p {
+  /* float: right; */
+  /* width: 74px; */
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 300; }
+
+.header-nav span {
+  font-size: 24px;
+  padding-right: 5px; }
+
+.header-nav a {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 300; }
+
+.header-nav {
+  padding-top: 20px; }
+
+.header-nav ul {
+  list-style: none;
+  padding-left: 0; }
+
+.header-nav li {
+  display: inline-block;
+  padding-right: 30px; }
+
+.nav-dropdown-container {
+  width: 100%;
+  z-index: 50;
+  height: 0; }
+
+.nav-dropdown {
+  width: 1080px;
+  background: #f0f0f0;
+  height: 500px;
+  position: relative;
+  top: -500px;
+  z-index: 150;
+  transition: 250ms;
+  margin: 0 auto; }
+
+.nav-dropdown ul {
+  list-style: none;
+  padding-left: 0; }
+
+.open-product-nav {
+  top: 0px; }
+
+.dropdown-trigger {
+  cursor: pointer; }
+
 /* Banner */
 .banner-wrap {
   width: 100%;
   background: #fff;
-  height: 400px;
   position: relative; }
 
 .banner {
@@ -55,27 +107,43 @@ html {
   background: url("../images/placeholder3.jpg") center bottom;
   background-size: cover; }
 
+.logo {
+  width: 90px;
+  display: inline-block;
+  padding-top: 0px; }
+
 .banner-logo {
-  width: 500px;
+  width: 600px;
   display: inline-block;
   position: absolute;
-  padding-top: 25px;
-  padding-left: 25px; }
+  padding-left: 25px;
+  bottom: 25px; }
+  .banner-logo ul {
+    list-style: none;
+    padding-left: 0; }
+  .banner-logo li {
+    display: inline-block;
+    vertical-align: top; }
 
 .banner-heading {
-  font-size: 60px;
-  color: #555;
-  font-weight: normal;
+  font-size: 48px;
+  color: #fff;
   text-transform: uppercase;
-  font-family: 'Nevis', sans-serif; }
+  font-weight: 900;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  line-height: 50px;
+  text-shadow: 1px 1px 10px #000; }
 
 .banner-animation,
 .banner-pre-animation {
   display: inline-block;
   font-size: 24px;
-  color: #555;
-  font-weight: normal;
-  padding-right: 5px; }
+  color: #fff;
+  font-weight: 300;
+  padding-right: 5px;
+  font-family: 'Lato', sans-serif;
+  text-shadow: 1px 1px 5px #000; }
 
 .banner-overlay-left {
   position: absolute;
@@ -104,8 +172,8 @@ html {
   background: transparent;
   display: inline;
   float: right;
-  margin-top: 25px;
-  margin-right: 25px; }
+  margin-top: 85px;
+  margin-right: -24px; }
 
 .contact-slideout {
   width: 200px;
@@ -178,7 +246,7 @@ html {
   position: relative;
   width: 200px;
   height: 100px;
-  background: #B71C1C;
+  background: #BF360C;
   padding: 30px 15px;
   right: 0;
   bottom: 0px;
@@ -282,59 +350,6 @@ html {
 .open-davis {
   bottom: 0; }
 
-/* Product Dropdown */
-.header-nav p {
-  /* float: right; */
-  /* width: 74px; */
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 300; }
-
-.header-nav span {
-  font-size: 24px;
-  padding-right: 5px; }
-
-.header-nav a {
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 300; }
-
-.header-nav {
-  padding-top: 20px; }
-
-.header-nav ul {
-  list-style: none;
-  padding-left: 0; }
-
-.header-nav li {
-  display: inline-block;
-  padding-right: 30px; }
-
-.nav-dropdown-container {
-  width: 100%;
-  z-index: 50;
-  height: 0; }
-
-.nav-dropdown {
-  width: 1080px;
-  background: rgba(255, 255, 255, 0.9);
-  height: 500px;
-  position: relative;
-  top: -500px;
-  z-index: 150;
-  transition: 250ms;
-  margin: 0 auto; }
-
-.nav-dropdown ul {
-  list-style: none;
-  padding-left: 0; }
-
-.open-product-nav {
-  top: 0px; }
-
-.dropdown-trigger {
-  cursor: pointer; }
-
 /* Company Logos */
 /* Footer */
 .footer-wrap {
@@ -382,5 +397,16 @@ html {
 /* Override Classes */
 .hidden {
   display: none; }
+
+.dimension-wrap {
+  background: url("../images/3d-wrap.png");
+  width: 25px;
+  height: 10px;
+  background-size: contain;
+  position: absolute;
+  /* margin-left: auto; */
+  margin-top: 100px;
+  margin-left: 376px;
+  z-index: 50; }
 
 /*# sourceMappingURL=main.css.map */
