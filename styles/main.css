@@ -106,7 +106,7 @@ html {
 
 .nav-dropdown {
   width: 1080px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   height: 50px;
   position: absolute;
   top: -50px;
@@ -402,14 +402,13 @@ html {
 /* Footer */
 .footer-wrap {
   position: relative;
-  height: 200px;
   margin-top: 25px; }
 
 .footer {
   width: 1080px;
   margin: 0 auto;
   border-top: 1px solid #dfdfdf;
-  padding-top: 25px; }
+  padding: 50px 0; }
 
 .footer li {
   display: inline-block;
