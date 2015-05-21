@@ -155,8 +155,8 @@
     $('#fullpage').fullpage({
         //Navigation
         menu: false,
-        anchors:['firstPage', 'secondPage'],
-        navigation: false,
+        anchors:['home', 'footer'],
+        navigation: true,
         navigationPosition: 'right',
         navigationTooltips: ['firstSlide', 'secondSlide'],
         showActiveTooltips: false,
@@ -165,7 +165,7 @@
 
         //Scrolling
         css3: true,
-        scrollingSpeed: 700,
+        scrollingSpeed: 1000,
         autoScrolling: true,
         fitToSection: true,
         scrollBar: false,
@@ -187,7 +187,7 @@
 
         //Design
         controlArrows: true,
-        verticalCentered: true,
+        verticalCentered: false,
         resize : false,
         sectionsColor : ['#fff', 'transparent'],
         paddingTop: '3em',

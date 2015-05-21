@@ -89,7 +89,7 @@ $gutter: em(47px);
     position: absolute;
     right: 10px;
     vertical-align: top;
-    margin-top: -25px;
+    margin-top: -50px;
 
     ul {
         list-style: none;
@@ -103,9 +103,16 @@ $gutter: em(47px);
 
 .social-button {
     padding-right:15px;
-    font-size:30px;
+    font-size:24px;
     color:#555;
     transition:250ms;
+}
+
+.social-heading {
+    margin-right: 15px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #999;
 }
 
 .fa-twitter:hover {
@@ -129,18 +136,18 @@ $gutter: em(47px);
 }
 
 .nav-dropdown {
-  width: 1080px;
-  background: rgba(0,0,0,.7);
-  height: 50px;
+  width: 480px;
+  background: rgba(255,255,255,.3);
+  height: 85px;
   position: absolute;
-  top: 50px;
+  top: 15px;
   z-index: 150;
   transition: 250ms;
 }
 
 .nav-dropdown span {
     padding-right:5px;
-    color:#ccc;
+    color:#999;
 }
 
 .nav-dropdown ul {
@@ -152,7 +159,8 @@ $gutter: em(47px);
     display:inline-block;
     font-weight: 300;
     padding:15px 15px 0 15px;
-    color:#dfdfdf;
+    color:#333;
+    width: 150px;
 }
 
 .open-product-nav {
@@ -263,7 +271,7 @@ $gutter: em(47px);
     margin: 0 auto;
     position: relative;
     display: block;
-    top: 25px;
+    top: 45px;
     /* background: #333; */
     padding-top: 25px;
 }
@@ -576,7 +584,7 @@ $gutter: em(47px);
 .footer-wrap {
     position: relative;
     margin-top: 25px;
-    top: 75px;
+    top: 200px;
 }
 
 
@@ -591,7 +599,7 @@ $gutter: em(47px);
 .footer-container li {
     display: inline-block;
     vertical-align:top;
-    width: 25%;
+    width: 33%;
 }
 
 .footer-container ul {
@@ -620,7 +628,48 @@ $gutter: em(47px);
     color:#555;
 }
 
+/* Newsletter Form */
 
+.newsletter-container {
+    position: relative;
+    font-size: 0;
+}
+
+.newsletter-heading {
+    width:320px;
+    font-size: 24px;
+    line-height: 18px;
+    font-weight:300;
+    display:block;
+    padding-bottom:5px;
+}
+
+.newsletter input {
+    width:240px;
+    height:40px;
+    border: 0px solid #dfdfdf;
+    border-radius: 3px 0px 0px 3px;
+    outline: 0;
+    background:#f8f8f8;
+    text-indent: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    display: inline-block;
+}
+
+.newsletter button {
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    font-weight: 300;
+    border-radius: 0px 3px 3px 0px;
+
+    background: #03A9F4;
+    border:none;
+    color: #fff;
+    font-size: 16px;
+    vertical-align: top;
+}
 
 
 
