@@ -150,6 +150,26 @@
 
   });
 
+  // Phone Number Hover
+
+  // $('.phone-li').on('click', function(){
+  // event.preventDefault();
+  //   $('.davis-phone').toggleClass('hidden');
+  //   // $('.close-slideout').removeClass('hidden');
+  //   // $('.contact-square').addClass('hidden');
+  // });
+
+      $( ".phone-li" )
+  .mouseover(function() {
+    // $( ".davis-name", this ).removeClass( "hidden" );
+    $( ".davis-phone", this ).removeClass( "hidden" );
+
+  })
+  .mouseout(function() {
+    // $( ".davis-name", this ).addClass( "hidden" );
+    $( ".davis-phone", this ).addClass( "hidden" );
+
+  });
 
   $(document).ready(function() {
     $('#fullpage').fullpage({

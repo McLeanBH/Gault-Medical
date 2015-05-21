@@ -56,6 +56,8 @@ $gutter: em(47px);
     font-weight:300;
 }
 
+
+
 .header-nav span {
     font-size: 24px;
     padding-right:5px;
@@ -65,6 +67,8 @@ $gutter: em(47px);
     text-transform: uppercase;
     font-size: 18px;
     font-weight:300;
+    color:#333;
+    text-decoration: none;
 }
 
 .header-nav {
@@ -271,7 +275,7 @@ $gutter: em(47px);
     margin: 0 auto;
     position: relative;
     display: block;
-    top: 45px;
+    top: 20px;
     /* background: #333; */
     padding-top: 25px;
 }
@@ -284,12 +288,12 @@ $gutter: em(47px);
     background: transparent;
     display: inline;
     float: right;
-    margin-right: -24px;
+    right: 25px;
     transition: 250ms;
 }
 
 .contact-expand-bio {
-    width:600px;
+    width:500px;
     transition: 250ms;
 }
 
@@ -322,7 +326,7 @@ $gutter: em(47px);
 }
 
 .open-bio {
-    width:400px;
+    width:300px;
     transition:250ms;
 }
 
@@ -381,7 +385,6 @@ $gutter: em(47px);
     float: right;
     font-size: 0;
     z-index: 95;
-    left: 100px;
 
     ul {
         list-style: none;
@@ -397,9 +400,29 @@ $gutter: em(47px);
         color:#f0f0f0;
         border-right:1px solid #444;
         border-left:1px solid #222;
+        text-shadow: 1px 1px 5px #000;
+        vertical-align:top;
     }
+
 }
 
+.davis-bio li:hover .fa-linkedin, 
+.ed-bio li:hover .fa-linkedin {
+    color: #007bb6;
+}
+
+.davis-phone {
+    display:block;
+    color:#f0f0f0;
+    font-size:10px;
+    font-weight:300;
+    padding-top:7px;
+    transition:250ms;
+}
+
+.phone-jump {
+    font-size:10px;
+}
 
 .contact-square {
     position: relative;
@@ -599,7 +622,7 @@ $gutter: em(47px);
 .footer-container li {
     display: inline-block;
     vertical-align:top;
-    width: 33%;
+    width: 25%;
 }
 
 .footer-container ul {
@@ -615,6 +638,11 @@ $gutter: em(47px);
     color: #999;
     font-weight: 300;
     line-height: 28px;
+}
+
+.footer-envelope {
+    padding-right:10px;
+    color:#f0f0f0;
 }
 
 .footer-heading {
@@ -645,7 +673,7 @@ $gutter: em(47px);
 }
 
 .newsletter input {
-    width:240px;
+    width:180px;
     height:40px;
     border: 0px solid #dfdfdf;
     border-radius: 3px 0px 0px 3px;
@@ -688,4 +716,5 @@ $gutter: em(47px);
     margin-top: 100px;
     z-index: 50;
     right: 0px;
+    display: none;
 }
