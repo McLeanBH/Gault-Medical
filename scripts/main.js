@@ -2,7 +2,7 @@
 
   $(function(){
       $(".banner-animation").typed({
-        strings: ["Supplies", "Devices"],
+        strings: ["Supplies", "Devices", "Equipment"],
         typeSpeed: 100,
         backDelay: 3000,
         loop: true, 
@@ -111,6 +111,9 @@
     $('.dropdown-trigger').on('click', function(){
   event.preventDefault();
     $('.nav-dropdown').toggleClass('open-product-nav');
+    $('.banner-wrap').toggleClass('banner-shift');
+    $('.services').toggleClass('services-shift');
+
   });
 
   //   $( ".dropdown-trigger" )
