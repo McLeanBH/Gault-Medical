@@ -80,7 +80,7 @@ html {
   position: absolute;
   right: 10px;
   vertical-align: top;
-  margin-top: -50px; }
+  margin-top: -25px; }
   .header-social ul {
     list-style: none;
     padding-left: 0; }
@@ -116,12 +116,13 @@ html {
   height: 0; }
 
 .nav-dropdown {
-  width: 480px;
-  background: rgba(255, 255, 255, 0.3);
-  height: 85px;
+  width: 100%;
+  background: #333;
+  height: 50px;
   position: absolute;
-  top: 15px;
+  top: 50px;
   z-index: 150;
+  padding-left: 15px;
   transition: 250ms; }
 
 .nav-dropdown span {
@@ -136,8 +137,7 @@ html {
   display: inline-block;
   font-weight: 300;
   padding: 15px 15px 0 15px;
-  color: #333;
-  width: 150px; }
+  color: #dfdfdf; }
 
 .open-product-nav {
   top: 100px; }
@@ -151,7 +151,8 @@ html {
   height: 100%;
   background: #fff;
   position: relative;
-  top: 50px; }
+  top: 50px;
+  transition: 250ms; }
 
 .banner {
   width: 1080px;
@@ -192,13 +193,13 @@ html {
 .banner-animation,
 .banner-pre-animation {
   display: inline-block;
-  font-size: 24px;
+  font-size: 18px;
   color: #f0f0f0;
   font-weight: 300;
   padding-right: 5px;
   font-family: 'Lato', sans-serif;
-  line-height: 20px;
-  text-transform: lowercase;
+  line-height: 16px;
+  text-transform: uppercase;
   text-shadow: 1px 1px 4px #000; }
 
 .banner-overlay-left {
@@ -222,12 +223,9 @@ html {
 /* Contact Slideout */
 .contact-container {
   width: 1080px;
-  /* height: 150px; */
   margin: 0 auto;
   position: relative;
   display: block;
-  top: 20px;
-  /* background: #333; */
   padding-top: 25px; }
 
 .contact {
@@ -337,7 +335,7 @@ html {
 
 .davis-bio li:hover .fa-linkedin,
 .ed-bio li:hover .fa-linkedin {
-  color: #007bb6; }
+  color: #f0f0f0; }
 
 .davis-phone {
   display: block;
@@ -500,20 +498,18 @@ html {
 /* Company Logos */
 /* Footer */
 .footer-wrap {
-  position: relative;
-  margin-top: 25px;
-  top: 200px; }
+  position: relative; }
 
 .footer-container {
   width: 1080px;
   margin: 0 auto;
   border-top: 1px solid #dfdfdf;
-  padding: 25px 0 50px; }
+  padding: 25px 25px 50px; }
 
 .footer-container li {
   display: inline-block;
   vertical-align: top;
-  width: 25%; }
+  width: 30%; }
 
 .footer-container ul {
   list-style: none;
@@ -578,6 +574,47 @@ html {
   font-size: 16px;
   vertical-align: top; }
 
+/* Services */
+.services {
+  width: 1080px;
+  font-size: 0;
+  margin: 0 auto;
+  margin-top: 52px;
+  padding: 50px 50px 50px;
+  background: #f8f8f8;
+  border-top: 1px solid #dfdfdf;
+  transition: 250ms; }
+
+.services ul {
+  list-style: none;
+  padding-left: 0; }
+
+.services li {
+  display: inline-block;
+  width: 280px;
+  margin-right: 50px;
+  font-size: 16px;
+  text-align: left;
+  font-weight: 300;
+  color: #555;
+  line-height: 24px; }
+
+.services li:last-child {
+  margin-right: 0; }
+
+.services h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #555;
+  line-height: 36px; }
+
+.services p {
+  padding-left: 27px; }
+
+.fa-arrow-circle-o-right {
+  margin-right: 5px;
+  color: #999; }
+
 /* Override Classes */
 .hidden {
   display: none; }
@@ -592,5 +629,11 @@ html {
   z-index: 50;
   right: 0px;
   display: none; }
+
+.banner-shift {
+  top: 100px; }
+
+.services-shift {
+  margin-top: 102px; }
 
 /*# sourceMappingURL=main.css.map */
