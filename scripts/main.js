@@ -111,8 +111,8 @@
     $('.dropdown-trigger').on('click', function(){
   event.preventDefault();
     $('.nav-dropdown').toggleClass('open-product-nav');
-    $('.banner-wrap').toggleClass('banner-shift');
-    $('.services').toggleClass('services-shift');
+    // $('.banner-wrap').toggleClass('banner-shift');
+    // $('.services').toggleClass('services-shift');
 
   });
 
@@ -179,60 +179,58 @@
 
   });
 
-//   $(document).ready(function() {
-//     $('#fullpage').fullpage({
-//         //Navigation
-//         menu: false,
-//         anchors:['home', 'footer'],
-//         navigation: true,
-//         navigationPosition: 'right',
-//         navigationTooltips: ['firstSlide', 'secondSlide'],
-//         showActiveTooltips: false,
-//         slidesNavigation: true,
-//         slidesNavPosition: 'bottom',
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+        //Navigation
+        menu: false,
+        anchors:['home', 'services'],
+        navigation: false,
+        navigationPosition: 'right',
+        navigationTooltips: ['firstSlide', 'secondSlide'],
+        showActiveTooltips: false,
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
 
-//         //Scrolling
-//         css3: true,
-//         scrollingSpeed: 1000,
-//         autoScrolling: true,
-//         fitToSection: true,
-//         scrollBar: false,
-//         easing: 'easeInOutCubic',
-//         easingcss3: 'ease',
-//         loopBottom: false,
-//         loopTop: false,
-//         loopHorizontal: true,
-//         continuousVertical: false,
-//         normalScrollElements: '#element1, .element2',
-//         scrollOverflow: false,
-//         touchSensitivity: 15,
-//         normalScrollElementTouchThreshold: 5,
+        //Scrolling
+        css3: true,
+        scrollingSpeed: 1500,
+        autoScrolling: true,
+        fitToSection: true,
+        scrollBar: false,
+        easing: 'easeInOutCubic',
+        easingcss3: 'ease',
+        loopBottom: false,
+        loopTop: false,
+        loopHorizontal: true,
+        continuousVertical: false,
+        normalScrollElements: '#element1, .element2,',
+        scrollOverflow: false,
+        touchSensitivity: 15,
+        normalScrollElementTouchThreshold: 5,
 
-//         //Accessibility
-//         keyboardScrolling: true,
-//         animateAnchor: true,
-//         recordHistory: true,
+        //Accessibility
+        keyboardScrolling: true,
+        animateAnchor: true,
+        recordHistory: true,
 
-//         //Design
-//         controlArrows: true,
-//         verticalCentered: false,
-//         resize : false,
-//         sectionsColor : ['#fff', 'transparent'],
-//         paddingTop: '3em',
-//         paddingBottom: '10px',
-//         fixedElements: '#header, .footer',
-//         responsive: 800,
+        //Design
+        controlArrows: true,
+        verticalCentered: false,
+        resize : false,
+        sectionsColor : ['#f8f8f8', '#fff'],
+        fixedElements: '#header, .footer',
+        responsive: 1080,
 
-//         //Custom selectors
-//         sectionSelector: '.section',
-//         slideSelector: '.slide',
+        //Custom selectors
+        sectionSelector: '.section',
+        slideSelector: '.slide',
 
-//         //events
-//         onLeave: function(index, nextIndex, direction){},
-//         afterLoad: function(anchorLink, index){},
-//         afterRender: function(){},
-//         afterResize: function(){},
-//         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-//         onSlideLeave: function(anchorLink, index, slideIndex, direction){}
-//     });
-// });
+        //events
+        onLeave: function(index, nextIndex, direction){},
+        afterLoad: function(anchorLink, index){},
+        afterRender: function(){},
+        afterResize: function(){},
+        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+        onSlideLeave: function(anchorLink, index, slideIndex, direction){}
+    });
+});
