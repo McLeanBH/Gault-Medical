@@ -110,7 +110,9 @@
 
     $('.dropdown-trigger').on('click', function(){
   event.preventDefault();
-    $('.nav-dropdown').toggleClass('open-product-nav');
+    $('.nav-dropdown-container').toggleClass('open-product-nav');
+    $('.nav-company-container').toggleClass('close-nav-company');
+
     // $('.banner-wrap').toggleClass('banner-shift');
     // $('.services').toggleClass('services-shift');
 
@@ -171,11 +173,15 @@
   .mouseover(function() {
     // $( ".davis-name", this ).removeClass( "hidden" );
     $( ".davis-phone", this ).removeClass( "hidden" );
+    $( ".ed-phone", this ).removeClass( "hidden" );
+
 
   })
   .mouseout(function() {
     // $( ".davis-name", this ).addClass( "hidden" );
     $( ".davis-phone", this ).addClass( "hidden" );
+    $( ".ed-phone", this ).addClass( "hidden" );
+
 
   });
 
