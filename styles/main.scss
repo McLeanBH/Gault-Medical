@@ -53,6 +53,7 @@ body {
     cursor: pointer;
 }
 
+
 /* Header Nav and Product Dropdown */
 
 .header-nav p {
@@ -321,11 +322,11 @@ body {
 
 .banner {
     width: 100%;
-    height: 350px;
+    height: 450px;
     margin: 0 auto;
     transition:250ms;
-    background:#fff;
-    /*background: url('../images/placeholder3.jpg') center bottom;*/
+    background:#ccc;
+    background: url('../images/people-doctor.jpg') center top;
     background-size: cover;
 
 }
@@ -411,6 +412,14 @@ body {
     height: 100%;
     right: 0;
     top: 0;
+}
+
+.mobile-logo {
+    width: 15px;
+    height: 15px;
+    margin-top:3px;
+    margin-right:5px;
+    display: none;
 }
 
 /* Override Section Styling */
@@ -661,6 +670,7 @@ body {
     z-index: 95;
     vertical-align: bottom;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .contact-thumbnail img {
@@ -767,7 +777,7 @@ body {
 /* Footer */
 
 .footer-wrap {
-    position: absolute;
+    position: relative;
     width: 100%;
     border-top:1px solid #dfdfdf;
     background:#fff;
@@ -1101,6 +1111,7 @@ body {
 
     .banner {
         width: 100%;
+        height:400px;
     }
 
     .nav-dropdown {
@@ -1134,7 +1145,6 @@ body {
     .footer-container li {
         display: block;
         width: 100%;
-        margin-bottom: 25px;
     }
 
     /* Product Page */
@@ -1265,7 +1275,6 @@ body {
         margin-top:0px;
         padding: 0px;
         margin-bottom:0px;
-        border-bottom:1px solid #dfdfdf;
     }
 
     .services li {
@@ -1279,6 +1288,12 @@ body {
         border-right: 0;
         height: auto;
     }
+
+    .services li:last-child {
+        border-bottom: 0;
+    }
+
+
 
     .social-heading {
         display: none;
@@ -1300,23 +1315,18 @@ body {
 
     .footer-container {
         width:100%;
-        padding-top:75px !important;
         padding: 25px;
-        background:#111;
     }
 
     .footer-wrap {
-        padding-top:50px;
     }
 
 
     .footer-container li {
         width: 100%;
-        color:#999;
     }
 
     .footer-container li span {
-        color:#999;
     }
 
     .nav-dropdown-container {
@@ -1349,12 +1359,12 @@ body {
     .mobile-menu {
         display: block;
         position: absolute;
-        top: -80px;
+        top: -87px;
         left:0;
         width: 100%;
-        height: 230px;
+        height: 237px;
         transition: 250ms;
-        background: #f8f8f8;
+        background: #333;
         z-index:5;
         font-size: 0;
 
@@ -1362,19 +1372,19 @@ body {
         ul {
             list-style: none;
             padding-left: 0;
-            border-bottom: 1px solid #dfdfdf;
+            border-bottom: 1px solid #252525;
         }
 
         li {
             display: inline-block;
-            color: #333;
+            color: #ccc;
             padding: 20px;
             width: 50%;
             font-size: 14px;
-            border-bottom: 1px solid #fff;
-            border-top: 1px solid #dfdfdf;
-            border-right: 1px solid #dfdfdf;
-            border-left: 1px solid #fff;
+            border-bottom: 1px solid #444;
+            border-top: 1px solid #252525;
+            border-right: 1px solid #444;
+            border-left: 1px solid #252525;
             text-align: center;
 
         }
@@ -1405,10 +1415,6 @@ body {
     }
 
     /* Mobile Menu Heading */
-
-    .mobile-logo {
-        width: 35px;
-    }
 
     .mobile-heading {
         color: #dfdfdf;
@@ -1485,6 +1491,10 @@ body {
 
     .fa-linkedin {
         padding-right:0;
+    }
+
+    .mobile-logo {
+        display: inline-block;
     }
 
 
