@@ -242,6 +242,10 @@ body {
     color: #333;
 }
 
+.nav-dropdown a {
+    text-decoration: none;
+    color:#333;
+}
 
 
 .nav-company-container {
@@ -293,6 +297,11 @@ body {
     display:inline-block;
     font-weight: 300;
     padding:15px 15px 0 15px;
+    color: #333;
+}
+
+.nav-company a {
+    text-decoration: none;
     color: #333;
 }
 
@@ -1155,10 +1164,11 @@ body {
     li {
         font-size: 16px;
         font-weight: 300;
-        padding: 25px 15px;
+        padding: 25px 30px;
         display: block;
         border-bottom: 1px solid #f0f0f0;
         border-top: #fff;
+        color:#333;
     }
 
     li:last-child {
@@ -1167,6 +1177,11 @@ body {
 
     span {
         padding-right: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #333;
     }
 }
 
@@ -1618,6 +1633,11 @@ body {
             font-size: 6px;
             vertical-align: top;
             padding-top:7px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ccc;
         }
     }
 

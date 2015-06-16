@@ -199,6 +199,10 @@ body {
   padding: 15px 15px 0 15px;
   color: #333; }
 
+.nav-dropdown a {
+  text-decoration: none;
+  color: #333; }
+
 .nav-company-container {
   width: 100%;
   position: relative;
@@ -242,6 +246,10 @@ body {
   display: inline-block;
   font-weight: 300;
   padding: 15px 15px 0 15px;
+  color: #333; }
+
+.nav-company a {
+  text-decoration: none;
   color: #333; }
 
 .close-nav-company {
@@ -943,14 +951,18 @@ body {
   .product-info-module li {
     font-size: 16px;
     font-weight: 300;
-    padding: 25px 15px;
+    padding: 25px 30px;
     display: block;
     border-bottom: 1px solid #f0f0f0;
-    border-top: #fff; }
+    border-top: #fff;
+    color: #333; }
   .product-info-module li:last-child {
     border-bottom: 0; }
   .product-info-module span {
     padding-right: 10px; }
+  .product-info-module a {
+    text-decoration: none;
+    color: #333; }
 
 /* Override Classes */
 .hidden {
@@ -1294,6 +1306,9 @@ body {
       font-size: 6px;
       vertical-align: top;
       padding-top: 7px; }
+    .mobile-menu a {
+      text-decoration: none;
+      color: #ccc; }
 
   .mobile-menu-open {
     top: 150px; }
